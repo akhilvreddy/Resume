@@ -1,0 +1,207 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% template from: Ganesh Mohan (http://about.me/ganesh.mohan)
+%
+% author: Akhil Reddy
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{article}
+
+\usepackage{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{graphicx}
+% \usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage{setspace}
+\usepackage[margin=0.5in]{geometry}
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+% DEFINITIONS FOR RESUME
+
+\textheight=10in
+\pagestyle{fancy}
+\raggedright
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+
+\setlength{\hoffset}{-2pt}
+\setlength{\footskip}{20pt}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+\newcommand{\contact}[3]{
+\vspace*{3pt}
+\begin{center}
+{\LARGE \scshape {#1}}\\
+\vspace{5pt}
+#2 
+\vspace{2pt}
+#3
+\end{center}
+\vspace*{-8pt}
+}
+
+\newcommand{\header}[1]{{
+\hspace*{0pt}\vspace*{6pt} \textsc{#1}} \vspace*{-6pt} 
+\lineunder
+}
+
+\newcommand{\lineunder}{
+\vspace*{-8pt} \\ \hspace*{-3pt} 
+\hrulefill \\
+}
+
+\newcommand{\content}{
+\vspace*{2pt}
+}
+
+\newcommand{\school}[5]{\vspace*{2pt}% 
+\textbf{#1} \labelitemi #2 \hfill #3 \\ #4 \hfill #5
+\vspace*{5pt}
+}
+
+\newcommand{\college}[7]{
+\textbf{#1} \labelitemi \textbf{#2} \hfill #3 \\ #4 \hfill #7 \\ #5 \\ #6 \vspace*{5pt}
+}
+
+\newcommand{\employer}[4]{{
+\vspace*{2pt}%
+\textbf{#1} #2 \hfill #3\\ #4 \vspace*{2pt}}
+}
+
+\newcommand{\project}[3]{{
+\vspace*{2pt}% 
+\textbf{#1} #2 \hfill #3\vspace*{2pt}}
+}
+
+\renewcommand{\labelitemi}{
+$\vcenter{\hbox{\tiny$\bullet$}}$\hspace*{3pt}
+}
+
+\renewcommand{\labelitemii}{
+$\vcenter{\hbox{\tiny$\bullet$}}$\hspace*{-3pt}
+}
+
+\newenvironment{bullet-list-major}{
+\begin{list}{\labelitemii}{\setlength\leftmargin{9pt} 
+\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}\end{list}
+}
+
+\newenvironment{bullet-list-minor}{
+\begin{list}{\labelitemii}{\setlength\leftmargin{15pt} 
+\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}\end{list}
+}
+
+% END RESUME DEFINITIONS
+
+\begin{document}
+
+\small
+\smallskip
+\vspace*{-44pt}
+
+\contact{\textbf{Akhil Reddy}}
+{\faPhone\ (732) 666-7264
+\labelitemi \faEnvelope\ \href{mailto:avr54@scarletmail.rutgers.edu}{akhil.reddy@rutgers.edu}
+\labelitemi \faLinkedin\ \href{https://www.linkedin.com/in/akhilvreddy/}{akhilvreddy}
+\labelitemi \faGithub\ \href{https://github.com/akhilvreddy}{@akhilr77}%
+\labelitemi \faLink\ \href{https://akhilvreddy.github.io}{akhilreddy.me}
+\labelitemi \faGlobe\ 
+\href{https://www.google.com/maps/place/Kendall+Park,+South+Brunswick+Township,+NJ/@40.4202457,-74.6082391,11.94z/data=!4m5!3m4!1s0x89c3c2c402e2b9a9:0x7185a0a5d268d50!8m2!3d40.4209391!4d-74.560711}{Kendall Park, NJ}
+}
+
+\vspace{4pt}
+\header{Education}
+    \college{Rutgers University}{New Brunswick, NJ}{September 2020 -- May 2024}
+    {\textit{Bachelor of Science:}  Computer Engineering}
+    {\textit{Second Major:} Professional Physics ||  \textit{Minor: }Mathematics}{} 
+    {GPA: 3.74/4.0}
+
+    
+\vspace*{4pt}%
+\header{Highlighted Coursework}
+    \begin{bullet-list-major}
+    \item \textbf{Computer Engineering:} Data Structures, Computer Architecture, Circuits I-II, Digital Logic Design, Network Security, Probability \& Random Processes, Discrete Math, Computation for Engineers, Software Engineering, Linear Systems \& Signals
+    \item \textbf{Physics:} Classical Mechanics I-II, Electromagnetism I-II, Modern Physics, Quantum Mechanics, Thermal Physics, Computer Experimentation, Linear Algebra, Multivariable Calculus, Partial Differential Equations, Classical Physics Lab I-II
+    \end{bullet-list-major}
+
+\vspace*{4pt}%
+\header{Skills}
+    \begin{bullet-list-major}
+    \item \textbf{Programming languages:} Java, Python, Web (HTML/CSS/JavaScript/Typescript), C, C++, Verilog, R
+    \item \textbf{Software:} Git, Android Studio, React, Matlab, Mathematica, Maple, Arduino
+    \item \textbf{Laboratory:} Multimeter Analysis, Waveform Generator, Digital Oscilloscope, Frequency Counter, LCR Meter
+
+    \end{bullet-list-major}
+    
+\vspace*{4pt}%
+\header{Work Experience}
+    \employer{Bhattacharya \& Javanmard Lab}
+    {-- New Brunswick, New Jersey}{May 2021 -- August 2021}{Android App Developer}
+	\begin{bullet-list-minor}
+	\item Analyzed coral reef health by designing an android application that can detect and read RGB values from coral. Applied border detection by designing an algorithm that can checks pixel shade.
+	\item Worked with YOLOV4, a one-stage object detection model to trained AI to detect this specific kind of coral by loading data from different types. Designed software that understood how coral is reacting to chemical solutions to further analyze health.
+    \end{bullet-list-minor}
+    
+    \employer{Freelance Tutoring}
+    {}{June 2020 -- September 2020}{}
+	\begin{bullet-list-minor}
+	\item Tutored 20+ high school and undergraduate students in subjects ranging from multivariable calculus and linear algebra to calculus based physics. 
+	\item Guided students by explaining test taking strategies, effective note taking, and ways to study for assessments. Also customized lesson plans by identifying student neeeds and catered to diverse learning styles. 
+	\item Taught in different types of settings, from one-one-one instruction to teaching to a group of 5-6 students at a time.
+	\end{bullet-list-minor}
+
+\vspace*{4pt}%
+\header{Research Experience}
+    \employer{Jalali Lab}
+    {-- New Brunswick, New Jersey }{May 2022 -- Present}{Undergraduate Research Assistant}
+    \begin{bullet-list-minor}
+	\item Designing algorithms that tried to combat the effect of speckle noise in ISAR imaging. Used compression based sensing to get to the algorithms.
+    \end{bullet-list-minor}
+
+    \employer{Chandrasekhar Star Modeling}
+    {-- New Brunswick, New Jersey}{August 2021 -- January 2022}{Undergraduate Research Assistant}
+	\begin{bullet-list-minor}
+	\item Analyzed star temperature data to fit known differential equations \& reworked equations to decide if results would
+    work with hypothesized equations. Utilized C and Python to determine correlation between data from Y. Eriguchi’s paper to initially proposed
+    equations by Chandrashekar in 1939.
+    \end{bullet-list-minor}
+
+
+\vspace*{4pt}%
+\header{Projects}
+    \project{NBA Neural Network}{-- Python, NBA API}{}
+    \begin{bullet-list-minor}
+    \item Used the NBA Api to analyze game stats for the 2021-22 regular \& post season. Made a neural network to run the analysis. 
+    \item Trained the network by assigning weights to different characteristics such as points, rebounds, blocks. Network can now make real-time game predictions based off mid-game statistics.
+    \end{bullet-list-minor}
+
+    \project{Quantum Wavefunction Analysis}{-- Python, Mathematica, ..}{}
+	\begin{bullet-list-minor}
+	\item Implemented Schrodinger's equation into Mathematica to get results for the wave-equation for different potential levels. Took the results to python to plot the wavefunctions along the time axis. Had the real, imaginary, and total wavefunctions on the same plot.
+    \end{bullet-list-minor}
+
+
+\vspace*{4pt}%
+\header{Extra Curricular Activities}
+    \employer{Society of Physics Students, Rutgers Chapter}
+    {}{September 2020 -- Present}{Treasurer}
+	\begin{bullet-list-minor}
+    \item Responsible for spreading awareness of our club across campus and to local
+high schools and middle schools. Organized multiple events from demonstrations at elementary schools to professor talks and panels. 
+    \item As treasurer, I am responsible for all the finances of the club, from receiving and processing funding to budgeting the monthly spending we have. Also had to keep the records of membership and dues.
+    \end{bullet-list-minor}
+
+\end{document}
