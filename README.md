@@ -1,2 +1,2 @@
-# resume
-My resume: May 2022
+# Resume
+My resume as of May 2022
