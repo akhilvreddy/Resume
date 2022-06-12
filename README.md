@@ -1,2 +1,2 @@
 # Resume & CV
-My resume and CV as of May 2022 :)
+My resume and CV as of May 2022
