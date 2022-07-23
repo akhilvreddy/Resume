@@ -1,2 +1,2 @@
-# Resume & CV
-My resume and CV as of August 2022
+# Resume
+My resume as of August 2022
