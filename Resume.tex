@@ -1,5 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
+% template from: Ganesh Mohan (http://about.me/ganesh.mohan)
+%
 % author: Akhil Reddy
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -115,86 +117,98 @@ $\vcenter{\hbox{\tiny$\bullet$}}$\hspace*{-3pt}
 \labelitemi \faEnvelope\ \href{mailto:avr54@scarletmail.rutgers.edu}{akhil.reddy@rutgers.edu}
 \labelitemi \faLinkedin\ \href{https://www.linkedin.com/in/akhilvreddy/}{linkedin.com/in/akhilvreddy}
 \labelitemi \faGithub\ \href{https://github.com/akhilvreddy}{github.com/akhilvreddy}%
-\labelitemi \faLink\ \href{https://akhilvreddy.github.io}{akhilreddy.me}
+%\labelitemi \faLink\ \href{https://akhilvreddy.github.io}{akhilreddy.me}
 
 }
 
 \vspace{4pt}
-\header{Education}
-    \college{Rutgers University}{New Brunswick, NJ}{September 2020 -- May 2024}
-    {\textit{Bachelor of Science:}  Computer Engineering}
-    {\textit{Minors:} Physics \& Mathematics}{} 
-    {GPA: 3.74/4.0}
+\header{\textbf{Education}}
+    \college{Rutgers University}{New Brunswick, NJ}{Sep 2020 -- May 2024}
+    {\textit{Bachelor of Science:}  Computer Engineering | \textit{Minors:} Physics, Mathematics}
+    {}{} {GPA: 3.71/4.0}
 
     
 \vspace*{4pt}%
 \header{\textbf{Highlighted Coursework}}
+   % \begin{bullet-list-major}
+    % \textbf{Computer Engineering:}
+   % \item  Data Structures \& Algorithms, Computer Architecture, Network Security, Software Engineering
+   % \item \textbf{Physics \& Math:} Quantum Mechanics, Thermodynamics,  Linear Algebra, Multivariable Calculus, Partial Differential Equations
+%    \end{bullet-list-major}
+    Data Structures \& Algos, Computer Architecture, Operating Systems, Software Engineering, Numerical Modeling, C++ for Finance
+    
+\vspace*{4pt}%
+\header{\textbf{Experience}}
+    \employer{Crewcial Partners LLC \textsuperscript{\textcopyright}}
+    {- New York, NY}{Jan 2023 -- May 2023}{Software Engineering Intern}
+    \begin{bullet-list-minor}
+	\item Developed a back-office application for the investment banking team with proprietary client portfolio details. Worked with AngularJS and HTML to create a dynamic page with live pricing changes. Streamlined ROI factors by including pathways in C\#. 
+	\item Improved the firm's internal API by collaborating with the Data Engineering team and worked with the Equity Research team to design and implement strategic software applications to drive client portfolios.
+    \end{bullet-list-minor}
+
+    \employer{HJ Sims \& Co.}
+    {- Fairfield, CT}{Sep 2022 -- Present}{Software Engineering Intern}
+    \begin{bullet-list-minor}
+        \item Assisted with the migration away from a third party commissioner service for this boutique brokerage firm to help drive down costs and improve proprietary trader net payouts. Wrote SQL scripts to query the data and used python to link the employees.
+	\item Improved the UI of the AUM dashboard to include live changes after trades. Worked through a set of chargebacks that were resulting in wrong commission calculations for various employees which helped the firm process trade data at a higher rate.      
+    \end{bullet-list-minor}
+    
+    \employer{Jalali Lab @ Rutgers ECE}
+    {- Piscataway, NJ}{Jun 2022 -- Aug 2022}{Undergraduate Research Assistant}
+    \begin{bullet-list-minor}
+	\item Designed algorithms that combatted the effect of speckle noise in SAR imaging by using compression based sensing. Trained a convolution neural network using PyTorch with a data set including images of lungs with pneumonia.
+	\item Reconstructed distorted images using the neural network's ability to re-identify and sharpen images by passing them through the trained model. Was able to achieve 90\% resolution of original, no-noise image from this method.  
+    \end{bullet-list-minor}
+
+    \employer{Bhattacharya Lab}
+    {- New Brunswick, NJ}{Jan 2022 -- May 2022}{Undergraduate Research Associate}
+    \begin{bullet-list-minor}
+    \item Used Tensorflow Lite and Kotlin to design an android application that worked a one-stage detection model for coral reef. Included RGB testing on the backend using JScience to make conclusions about the health and survivability of the specimen. 
+    \end{bullet-list-minor}
+
+    
+
+
+
+\vspace*{4pt}%
+\header{\textbf{Projects}}
+    \project{Techfer - \emph{Rutgers BITS Datathon Winner: Best Overall}}{-- SQL, Tableau, ChartJS, PyTorch -- \href{https://github.com/akhilvreddy/Rutgers-BITS-Datathon}{GitHub \faGithub\ }}{Nov 2022}
+    \begin{bullet-list-minor}
+    \item Studied a data set about a country's happiness index and drew statistical conclusions using regression tests, paired t-tests, and chi-square tests. Recognized and came to conclusions using numerical data as well as visual inputs.
+    \item Utilized MySQL to sift \& clean the data set and Tableau to visualize partial tests compared to factors like GDP \& alcohol consumption using heat maps, 3D bar plots, and scatter plots.
+    \item Implemented a convolution neural network to project happiness from base conditions and a random forest classification to predict the h-index. Performed linear regression to identify key relationships and trends in developing vs. developed countries happiness.
+    
+    \item Used a cross-correlation dataset about Carbon (CO2) emissions and ran inferential tests to understand how these emissions across the world have varying affects on happiness depending on country, time, and population characteristics.
+    
+    \end{bullet-list-minor}
+
+
+    \project{Quantum Wavefunction Generator}{-- NumPy, SciPy, Matplotlib, Numba -- \href{https://github.com/akhilvreddy/Quantum-Wavefunction-Analysis}{GitHub \faGithub\ }}{May 2022}
+	\begin{bullet-list-minor}
+	\item Implemented Schrodinger's equation in Python for a single particle in varying potentials and calculated 5+ wavefunctions for corresponding particles using functions from SciPy \& Numpy. 
+	\item Plotted resulting potentials and dynamic wavefunctions in  using Matplotlib and created a gif of evolutions over time. Achieved 60fps animation by overlapping two solutions, which was 30\% faster than using an online numeric solver.
+    \end{bullet-list-minor}
+
+\vspace*{4pt}%
+\header{\textbf{Skills}}
     \begin{bullet-list-major}
-    \item \textbf{Computer Engineering:} Data Structures, Computer Architecture, Circuits I-II, Digital Logic Design, Network Security, Probability \& Random Processes, Discrete Math, Computation for Engineers, Software Engineering, Linear Systems \& Signals
-    \item \textbf{Physics \& Math:} Classical Mechanics I-II, Electromagnetism I-II, Modern Physics, Quantum Mechanics, Thermal Physics, Computer Experimentation, Linear Algebra, Multivariable Calculus, Partial Differential Equations, Classical Physics Lab I-II
+    \item \textbf{Programming languages:} Java, Python, C, C++, Web (HTML/CSS/JavaScript/Typescript), Go, Rust, oCaml, RISC-V
+    \item \textbf{Tools \& Frameworks:} Angular, React, Node.js, MongoDB, SQL, Git, GitHub, Docker, Flask, .NET Core, Postgres
+    
     \end{bullet-list-major}
 
 \vspace*{4pt}%
-\header{Skills}
-    \begin{bullet-list-major}
-    \item \textbf{Programming languages:} Java, Python, Web (HTML/CSS/JavaScript/Typescript), C, Verilog, R
-    \item \textbf{Software \& Frameworks:} Git, GitHub, Android Studio, React, Matlab, Mathematica, Maple, Arduino, SQL, AWS, Linux, Excel
-    
-    \end{bullet-list-major}
-    
-\vspace*{4pt}%
-\header{Experience}
-    \employer{Jalali Lab}
-    { -- \href{https://github.com/akhilvreddy/Autoencoder}{GitHub \faGithub\ }}{May 2022 -- Present}{Machine Learning Researcher}
+\header{\textbf{Leadership}}
+    \employer{IEEE (Eta Kappa Nu) Honor Society}
+    {- \emph{Webmaster}, Rutgers Chapter}{Apr 2022 -- Present}{}
     \begin{bullet-list-minor}
-	\item Designed algorithms that combatted the effect of speckle noise in ISAR imaging by using compression based sensing. Trained my neural network using PyTorch and Pandas with a data set including images of lungs with pneumonia.
-	\item Reconstructed distorted images using the neural network's ability to identify and sharpen images by passing them through the trained neural network. Was able to achieve 90\% resolution of original, no-noise image from this method.  
+    \item Developed and maintained the main website and intranet portals in accordance with the organizations needs. Implemented a new student/professor-facing UI using Node \& React.js that helped drive website traffic and eased navigation.
     \end{bullet-list-minor}
-
-    \employer{Javanmard Lab}
-    {-- \href{https://github.com/akhilvreddy/Coral-Reef}{GitHub \faGithub\ }}{Jan 2022 -- July 2022}{Android Application Developer}
+    \employer{Society of Physics Students}
+    {- \emph{Treasurer}, Rutgers Chapter}{Sep 2020 -- Present}{}
 	\begin{bullet-list-minor}
-	\item Analyzed coral reef health by designing an android application that can detect and read RGB values from 70+ coral. Applied border detection in java by designing an algorithm that checks pixel shade of the coral against the background.
-	\item Worked with YOLOv4 and trained AI to detect specific kind of coral using TensorFlow. Implemented an algorithm that analyzed how these coral react to different chemicals by using off-delay timers and 6 color sensors to further analyze health.
-    \end{bullet-list-minor}
-    
-    \employer{Chandrasekhar Star Modeling}
-    {}{August 2021 -- December 2021}{Undergraduate Research Assistant}
-	\begin{bullet-list-minor}
-	\item Investigated star temperature data to fit known differential equations \& reworked. Utilized Mathematica to do variable based calculations to simplify our equations and used C to do number crunching.
-	\item Proved correlation between data from Y. Eriguchi’s paper to initially proposed equations by Chandrashekar in 1939 by showing that both of the numerical solutions aligned by 85\%. 
+    \item Tracked a \$4,500 budget for events, drafted financial summaries, submitted quarterly fiscal packets, and monitored expenses for the school year. Organized 15+ events such as senior panels, research talks, and social affairs to garner interest in physics.
     \end{bullet-list-minor}
 
-
-\vspace*{4pt}%
-\header{Projects}
-    \project{NBA Neural Network}{-- Java, Python, Pandas, PyTorch -- \href{https://github.com/akhilvreddy/NBANeuralNetwork}{GitHub \faGithub\ }}{July 2022}
-    \begin{bullet-list-minor}
-    \item Engineered a NBA odds predictor by training a neural network which resulted in outcomes that are comparable to highly reputed odd-makers such as DraftKings about 80\% of the time.
-    \item Utilized PyTorch to analyze statistics of 200+ past games and sifted through data provided by the NBA API using excel. 
-    \item Produced over/under odds by calculating and assigning corresponding weights to game statistics and included functionality to input live game scores, which would make the odds change instantaneously. 
-    \end{bullet-list-minor}
-
-    \project{Quantum Wavefunction Analysis}{--  Mathematica, Jupyter, Numpy -- \href{https://github.com/akhilvreddy/Quantum-Wavefunction-Analysis}{GitHub \faGithub\ }}{May 2022}
-	\begin{bullet-list-minor}
-	\item Implemented Schrodinger's equation with python for a single particle in varying potentials and calculated 5+ wavefunctions for corresponding particles using fuctions from numpy and numba. 
-	\item Plotted resulting potentials and wavefunctions in Jupyter using matplotlib and created a gif of the wavefunction evolution over time using animation by overlapping two solutions, which was 50\% faster than using an online solver.
-    \end{bullet-list-minor}
-
-
-
-\vspace*{4pt}%
-\header{Leadership}
-    \employer{Society of Physics Students, Rutgers Chapter}
-    {}{September 2020 -- Present}{Treasurer}
-	\begin{bullet-list-minor}
-    \item Organized 10+ events such as panels, research talks etc to garner interest in physics for middle and high school students and increased club engagement and participation by 30+ members.
-    \item Track \$3,500 budget for events, draft financial summaries, submit fiscal end of semester packets, and manage bank account by monitoring expenses for the school year.
-    \end{bullet-list-minor}
-    \employer{First Year Integration}
-    {}{September 2021 -- Present}{Program Leader}
-    \begin{bullet-list-minor}
-    \item Mentored 5 first-year students to promote success in engineering by hosting 1-1 meetings and planning engaging events. Assisted with the transition between high school and undergraduate life by giving them advice about school, life, and plans post-graduation.  
-    \end{bullet-list-minor}
 
 \end{document}
