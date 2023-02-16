@@ -1,1 +1,1 @@
-Credits to the original author, .
+Credits to the template author, Ganesh Mohan.
